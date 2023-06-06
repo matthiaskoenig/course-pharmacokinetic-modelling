@@ -25,3 +25,5 @@ sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-gener
 jupyter nbconvert --to pdf 01_structural_models.ipynb
 jupyter nbconvert --to pdf 02_ordinary_differential_equations.ipynb
 jupyter nbconvert --to pdf 03_compartment_model.ipynb
+
+jupyter nbconvert --to pdf 04_simple_absorption.ipynb
