@@ -16,5 +16,10 @@ mkvirtualenv mb19
 Use virtualenv as jupyter kernel
 ```
 (fachkurs) python -m ipykernel install --user --name=mb19
-pip install numpy scipy matplotlib pandas
+
 ```
+
+
+## Convert material to PDF
+sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic
+jupyter nbconvert --to pdf 01_structural_models.ipynb

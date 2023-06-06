@@ -2,6 +2,8 @@ pandas
 numpy
 scipy
 matplotlib
+
 jupyterlab
+nbconvert[webpdf]
 
 
