@@ -9,7 +9,7 @@ t = np.linspace(start=0, stop=10*24, num=200)  # [hr]
 C = Dose/V * np.exp(-CL/V * t)  # [mg/l]
 
 # plot
-f, ax = plt.subplots(nrows=1, ncols=1, figsize=(5, 5), dpi=300)
+f, ax = plt.subplots(nrows=1, ncols=1)
 ax.plot(t/24.0, C, label="warfarin", color="black", linewidth=2.0)
 ax.set_xlabel("time [day]")
 ax.set_ylabel("warfarin [mg/l]")

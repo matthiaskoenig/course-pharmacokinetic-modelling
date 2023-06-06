@@ -12,7 +12,8 @@ t = np.linspace(start=0, stop=10*24, num=200)  # [hr]
 
 # Dose dependency
 f, ax = plt.subplots(nrows=1, ncols=1, figsize=(5, 5), dpi=300)
-for Dose in np.linspace(0, 100, num=6):
+doses = np.linspace(0, 100, num=6)
+for Dose in doses:
     C = Dose / V * np.exp(-CL / V * t)  # [mg/l]
     ax.plot(t/24.0, C, label=f"{Dose} [mg]")
 # reset dose
@@ -26,7 +27,8 @@ plt.show()
 
 # V dependency
 f, ax = plt.subplots(nrows=1, ncols=1, figsize=(5, 5), dpi=300)
-for V in np.linspace(10, 100, num=5):
+volumes = np.linspace(10, 100, num=5)
+for V in volumes:
     C = Dose / V * np.exp(-CL / V * t)  # [mg/l]
     ax.plot(t/24.0, C, label=f"{V:.2f} [l]")
 # reset volume
@@ -40,7 +42,8 @@ plt.show()
 
 # CL dependency
 f, ax = plt.subplots(nrows=1, ncols=1, figsize=(5, 5), dpi=300)
-for CL in np.linspace(0.1, 3, num=5):
+clearances = np.linspace(0.1, 3, num=5)
+for CL in clearances:
     C = Dose / V * np.exp(-CL / V * t)  # [mg/l]
     ax.plot(t/24.0, C, label=f"{CL:.2f} [l/hr]")
 
