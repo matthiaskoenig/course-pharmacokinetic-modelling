@@ -27,3 +27,4 @@ jupyter nbconvert --to pdf 02_ordinary_differential_equations.ipynb
 jupyter nbconvert --to pdf 03_compartment_model.ipynb
 
 jupyter nbconvert --to pdf 04_simple_absorption.ipynb
+jupyter nbconvert --to pdf 05_multiple_dosing.ipynb
