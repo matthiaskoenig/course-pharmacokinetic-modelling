@@ -6,4 +6,5 @@ matplotlib
 jupyterlab
 nbconvert[webpdf]
 
-
+sbmlutils
+libroadrunner
