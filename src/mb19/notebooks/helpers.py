@@ -69,3 +69,24 @@ def f_pk(t, c, dose, show: bool = False):
         print_pk(pk)
 
     return pk
+
+
+def dxdt_absorption_first_order(x, t, ka, ke):
+    """
+    First order absorption model
+    """
+    # state variables
+    A_tablet = x[0]  # [mg]
+    A_central = x[1]  # [mg/l]
+    A_urine = x[2]  # [mg]
+
+    # rates
+    va = ka * A_tablet  # [mg/hr]
+    ve = ke * A_central  # [mg/hr]
+
+    # odes (stoichiometric equation)
+    return [
+        -va,  # dA_tablet/dt  [mg/hr]
+        va - ve,  # dA_central/dt [mg/hr]
+        ve,  # dA_urine/dt  [mg/hr]
+    ]
