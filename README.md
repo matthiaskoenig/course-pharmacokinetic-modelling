@@ -32,5 +32,8 @@ jupyter nbconvert --to pdf 06_metabolism.ipynb
 jupyter nbconvert --to pdf 07_pharmacokinetic_parameters.ipynb
 jupyter nbconvert --to pdf 08_variability.ipynb
 jupyter nbconvert --to pdf 09_sbml.ipynb
+jupyter nbconvert --to pdf 10_pharmacodynamics.ipynb
+jupyter nbconvert --to pdf 11_pbpk_tutorial.ipynb
+
 
 
