@@ -72,10 +72,14 @@ Use virtualenv as jupyter kernel
 (pkmodels) python -m ipykernel install --user --name=pkmodels
 ```
 
-## Notebooks
+## Notebooks (JupyterLab, Jupyter Notebooks)
 With the created environment the notebooks in
 [`./src/mb19/notebooks/`](./src/mb19/notebooks/)
-can be executed. Run Jupyter or Jupyter Notebook and open the `*.ipynb` notebooks
+can be executed. Run JupyterLab or Jupyter Notebook and open the `*.ipynb` notebooks
+
+```
+jupyter lab
+```
 
 ## Convert material to PDF
 To create PDFs from the jupyter notebooks use
@@ -95,4 +99,4 @@ jupyter nbconvert --to pdf 10_pharmacodynamics.ipynb
 jupyter nbconvert --to pdf 11_pbpk_tutorial.ipynb
 ```
 
-© 2023 [Matthias König](https://livermetabolism.com)
+© 2023-2024 [Matthias König](https://livermetabolism.com)
