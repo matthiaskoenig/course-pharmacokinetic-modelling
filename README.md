@@ -81,6 +81,11 @@ can be executed. Run JupyterLab or Jupyter Notebook and open the `*.ipynb` noteb
 jupyter lab
 ```
 
+## Spyder
+```bash
+(pkmodels) pip install spyder
+```
+
 ## Convert material to PDF
 To create PDFs from the jupyter notebooks use
 ```

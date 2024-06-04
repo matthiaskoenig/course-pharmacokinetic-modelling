@@ -1,6 +1,7 @@
 from matplotlib import pyplot as plt
 import numpy as np
 
+#%%
 # Warfarin
 V = 10  # [l]
 CL = 0.1  # [L/hr]
@@ -11,6 +12,7 @@ dt = tend/(Nt-1)
 t = np.linspace(start=0, stop=tend, num=Nt)  # [hr]
 
 
+#%%
 # Dose dependency
 f, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(10, 5), dpi=300)
 
